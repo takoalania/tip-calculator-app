@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+  <div class="container">
+    <h2>Splitter</h2>
+    <div class="wrapper">
+      <div class="form-container">
+        <form name="myForm" id="form" action="">
+          <label class="bill">Bill</label>
+          <input class="bill-input" type="text" placeholder="0">
+          <img class="dollar-img" src="images/icon-dollar.svg" alt=""/>
+          <label class="tip">Select Tip %</label>
+          <div class="tip-button-container">
+            <button class="tip-button">5%</button>
+            <button class="tip-button">10%</button>
+            <button class="tip-button">15%</button>
+            <button class="tip-button">25%</button>
+            <button class="tip-button">50%</button>
+            <input class="custom-tip" type="text" placeholder="Custom">
+          </div>
+          <div class="people-container">
+            <label class="people">Number of people</label>
+            <input class="people-input" type="text" placeholder="0">
+            <img src="images/icon-person.svg" alt=""/>
+            <label class="error-people-count">Can't be zero</label>
+          </div>
+        </form>
+      </div>
+      <div class="result-container">
+        <div class="amount">
+          <div class="amount-content">
+            <p>Tip Amount</p>
+            <p class="amount-content-person">/ Person</p>
+          </div>
+          <div class="tip-amount-value">
+            <span>$0.00</span>
+          </div>
+        </div>
+        <div class="amount">
+          <div class="amount-content">
+            <p>Total Amount</p>
+            <p class="amount-content-person">/ Person</p>
+          </div>
+          <div class="total-amount-value">
+            <span>$0.00</span>
+          </div>
+        </div>
+        <button class="reset-button">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
